@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Princess Lailan's Royal Attendant</title>
+  <title>Prince Lailan's Royal Attendant</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet"/>
   <style>
@@ -14,7 +14,6 @@
       background: linear-gradient(135deg, #fbeffb, #ffe6f9);
       color: #4b004b;
       animation: fadeIn 2s ease-in;
-      position: relative;
     }
 
     header {
@@ -22,7 +21,6 @@
       padding: 2rem;
       background: #ffccf9;
       animation: popIn 1.2s ease-out;
-      position: relative;
     }
 
     header h1 {
@@ -65,7 +63,6 @@
       max-width: 800px;
       margin: auto;
       padding: 2rem;
-      position: relative;
     }
 
     h2 {
@@ -162,36 +159,60 @@
       0%, 100% {text-shadow: 0 0 5px #fff, 0 0 10px #ff00cc;}
       50% {text-shadow: 0 0 10px #ff99ff, 0 0 20px #ff33cc;}
     }
-
-    @keyframes glitter {
-      0% {opacity: 0.8; transform: translateY(0);}
-      100% {opacity: 0; transform: translateY(-20px);}
-    }
-
-    .glitter {
-      position: absolute;
-      width: 8px;
-      height: 8px;
-      background: radial-gradient(circle, #fff 0%, #ffcaff 80%);
-      border-radius: 50%;
-      animation: glitter 1.5s linear infinite;
-    }
   </style>
 </head>
 <body>
-  <div id="glitter-container"></div>
-  <script>
-    const glitterContainer = document.getElementById('glitter-container');
-    function createGlitter() {
-      const glitter = document.createElement('div');
-      glitter.classList.add('glitter');
-      glitter.style.left = Math.random() * 100 + 'vw';
-      glitter.style.top = Math.random() * 100 + 'vh';
-      glitter.style.animationDuration = (Math.random() * 2 + 1) + 's';
-      glitterContainer.appendChild(glitter);
-      setTimeout(() => glitter.remove(), 1500);
-    }
-    setInterval(createGlitter, 200);
-  </script>
+  <header>
+    <h1>Princess Lailan's Royal Attendant</h1>
+    <div class="badges">
+      <img src="https://img.shields.io/badge/By-Joseph_Onyango-purple" alt="Creator">
+      <img src="https://img.shields.io/badge/Version-1.0.0-gold" alt="Version">
+      <img src="https://img.shields.io/badge/For-Prince_Lailan-blueviolet" alt="For">
+    </div>
+    <img src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/05f5a13f6a91c330821ccd61e506c5a5~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=788dec76&x-expires=1750284000&x-signature=yinVivF5isAq8OahvfsrcuYCCvI%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=maliva" class="profile-pic" alt="Joseph Onyango">
+  </header>
+  <blockquote>
+    "By decree of Joseph Onyango: Let no meeting escape thy royal attention! A regal solution for managing courtly engagements."
+  </blockquote>
+  <main>
+    <h2>Royal Installation</h2>
+    <ul>
+      <li><strong>System Requirements:</strong> Windows 10/11 (64-bit), a browser for Zoom/Teams/Meet, and admin privileges</li>
+      <li><strong>Installer:</strong> <a class="download-btn" href="https://github.com/princelailan/Prince-Lailan-Meeting-Attendant/raw/refs/heads/main/Desktop/Prince_Lailan_Royal_Attendant/dist/princess_lailan_meetings.exe">Install Now</a></li>
+    </ul>
+
+    <h2>First Court Session</h2>
+    <p>Run the EXE. A <code>princess_config.json</code> file appears. Edit <code>royal_schedule.csv</code> like so:</p>
+    <pre><code>Time,Meeting Name,Meeting Link,Notification (minutes)
+"14:00","Council of Finance","https://meet.google.com/xyz",15
+"16:30","Royal Ball Planning","https://zoom.us/j/123",10</code></pre>
+
+    <h2>Royal Commands</h2>
+    <table>
+      <thead>
+        <tr><th>Command</th><th>Gesture</th><th>Effect</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Begin Court</td><td>Click</td><td>Start monitoring schedule</td></tr>
+        <tr><td>Issue Invitation</td><td>Press</td><td>Add meeting to scroll</td></tr>
+        <tr><td>Import Scroll</td><td>Command</td><td>Load a different CSV</td></tr>
+        <tr><td>Settings</td><td>Adjust</td><td>Customize notifications</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Court Dismissal</h2>
+    <p>To uninstall: run <code>uninstall.bat</code> or delete the folder manually.</p>
+
+    <h2>Royal Support</h2>
+    <ul>
+      <li>Email: jesuspromisesmedia@gmail.com</li>
+      <li>Proclamations: GitHub Issues</li>
+      <li>Artisan: Joseph Onyango</li>
+    </ul>
+  </main>
+  <footer>
+    Created with ❤️ by Joseph Onyango, Royal Software Artisan to His Highness Prince Lailan<br>
+    © 2025 Joseph Onyango - All royal rights reserved
+  </footer>
 </body>
 </html>
